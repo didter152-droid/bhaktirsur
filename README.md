@@ -1,1 +1,1 @@
-# bhaktisur
+# bhaktirsur
