@@ -27,7 +27,6 @@ const tracks = [
   {name:'Dugga Ma Eseche', artist:'Indradip-Antara', dur:'3:34', src:'sounds/duggaMaaeseche.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/duggaMaaeseche.jpg', list:'durga'},
   {name:'Dugga Maa', artist:'Arijit Singh', dur:'2:52', src:'sounds/duggaMaa.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/duggaMaa.jpg', list:'durga'},
   {name:'Dugga Maa Asche', artist:'INFRA', dur:'4:08', src:'sounds/DuggaMaAsche.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/DuggaMaAsche.jpg', list:'durga'},
-  {name:'Dugga maa asche', artist:'Kiran Majumder', dur:'4:08', src:'sounds/duggamaaasche.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/DuggaMaaasche.jpg', list:'durga'},
   {name:'Durga Elo Sreebhumi Te', artist:'Sreebhumi Sporting Club', dur:'4:40', src:'sounds/sreebhumigaan26.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/sreebhumigaan26.jpg', list:'durga'},
   {name:'Durge Durge Durgatinashini', artist:'DEBOLINAA NANDY', dur:'3:42', src:'sounds/durgedurgatinashini1.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/durgedurgatinashini1.jpg', list:'durga'},
   {name:'Ebar Keno Onnorokom Pujo', artist:'SVF', dur:'3:43', src:'sounds/ebarjenoOnnorokom.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/ebarjenoOnnorokom.jpg', list:'durga'},
