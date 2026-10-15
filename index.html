@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ভক্তির সুর</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🪔%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="fl" style="--r:-12deg;--dur:22s;--z:1.2;--o:.62;left:-14%;top:-4%;background-image:var(--i5);animation-delay:-3s"></div>
+  <div class="fl" style="--r:6deg;--dur:26s;--z:0.5;--o:.32;left:30%;top:-9%;background-image:var(--i4);animation-delay:-6s"></div>
+  <div class="fl" style="--r:14deg;--dur:19s;--z:1.8;--o:.5;right:-16%;top:8%;background-image:var(--i6);animation-delay:-9s"></div>
+  <div class="fl" style="--r:-8deg;--dur:24s;--z:1.0;--o:.5;left:-12%;top:40%;background-image:var(--i1);animation-delay:-12s"></div>
+  <div class="fl" style="--r:-11deg;--dur:21s;--z:1.6;--o:.5;right:-14%;top:46%;background-image:var(--i7);animation-delay:-15s"></div>
+  <div class="fl" style="--r:9deg;--dur:28s;--z:0.6;--o:.32;left:34%;top:60%;background-image:var(--i2);animation-delay:-18s"></div>
+  <div class="fl" style="--r:4deg;--dur:30s;--z:0.3;--o:.22;right:2%;top:20%;background-image:var(--i3);animation-delay:-21s"></div>
+  <div class="glow"></div>
+</div>
+<div class="app">
+  <div class="top">
+    <div class="pill"><b id="clock">--:--</b><span id="date"></span></div>
+    <button class="pill" id="theme" style="cursor:pointer;color:var(--text)" aria-label="Toggle theme">🌗Theme</button>
+  </div>
+  <div class="live"><span class="pill" id="online" hidden><span class="dot" style="display:inline-block"></span> <span id="onN">1</span> online</span></div>
+
+  <div class="logo" id="logo" aria-hidden="true"></div>
+  <div class="brand">ভক্তির সুর</div>
+  <p class="bn" id="tag" aria-live="polite">কাশফুলের দোলায়, মায়ের আগমনী সুরে।</p>
+  <h1>Enjoying <span id="festDay">পঞ্চমী</span>?</h1>
+  <p class="sub">DURGA PUJA 2026</p>
+  <div class="hero-art" id="hero" aria-hidden="true"></div>
+
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+  <div class="phead" id="plhead">
+    <div class="pt"><b id="plName"></b><span id="plCount"></span></div>
+    <div class="pact">
+      <button class="ib" id="plShuf" aria-label="Shuffle"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="M4 4l5 5"/></svg></button>
+      <button class="gplay" id="plPlay" aria-label="Play playlist"></button>
+    </div>
+  </div>
+  <div id="list"></div>
+  <button class="fab" id="dhak" aria-label="Dhak bajao" aria-pressed="false"><span class="dk">🥁</span></button>
+
+  <div class="player" id="player">
+    <div class="ptop">
+      <div class="pcov" id="cov"></div>
+      <div class="pinfo">
+        <b id="title"></b><span class="sg" id="artist"></span>
+        <input type="range" id="seek" min="0" max="100" value="0" aria-label="Seek">
+        <div class="ptime"><span id="cur">0:00</span> / <span id="dur">0:00</span></div>
+      </div>
+      <div class="pside"><button class="pclose" id="pclose" aria-label="Minimise player"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg></button><button class="pdl" id="pdl" aria-label="Download song"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg></button></div>
+    </div>
+    <div class="pctl">
+      <button class="ib" id="shuf" aria-label="Shuffle"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="M4 4l5 5"/></svg></button>
+      <button class="ib" id="prev" aria-label="Previous"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6z"/><path d="M20 5v14L9 12z"/></svg></button>
+      <button class="pplay" id="play" aria-label="Play"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+      <button class="ib" id="next" aria-label="Next"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2z"/><path d="M4 5v14l11-7z"/></svg></button>
+      <button class="ib" id="rep" aria-label="Repeat"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<div class="cele" id="cele" aria-live="polite" hidden>
+  <canvas id="fw" aria-hidden="true"></canvas>
+  <div class="cbox">
+    <div class="c1" id="c1">শুভ</div>
+    <div class="c2" id="c2"></div>
+    <div class="c3">DURGA PUJA 2026</div>
+    <p class="c4">মা দুর্গার আশীর্বাদে সবার পুজো আনন্দে কাটুক</p>
+    <button class="cgo" id="cgo">গান শুনি</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<audio id="audio" preload="none"></audio>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
