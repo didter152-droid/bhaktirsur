@@ -52,7 +52,8 @@ const tracks = [
   {name:'Rupang Dehi', artist:'Dipesh Chakraborty', dur:'4:30', src:'sounds/Rupang-Dehi.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/Rupang-Dehi.jpg', list:'durga'},
   {name:'Rupang Dehi Jayang Dehi', artist:'Pandit Tushar Datta', dur:'4:59', src:'sounds/rupangdehi.mp3', cat:'Aarti', thumb:'sounds/thumbs/rupangdehi.jpg', list:'durga'},
   {name:'Sandhya Aarti', artist:'Traditional', dur:'9:00', src:'sounds/sandhya-aarti.mp3', cat:'Dhak', thumb:'sounds/thumbs/sandhya-aarti.jpg', list:'durga'},
-  {name:'Sreebhumir Pujor Gaan', artist:'Theme Song 2019', dur:'7:19', src:'sounds/sreebhumipujorgaan.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/sreebhumipujorgaan.jpg', list:'durga'},
+    {name:'Shuvo Shuvo', artist:'Rahashya Jana', dur:'3:15', src:'sounds/shuvoshuvo.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/shuvoshuvo.jpg', list:'durga'},
+   {name:'Sreebhumir Pujor Gaan', artist:'Theme Song 2019', dur:'7:19', src:'sounds/sreebhumipujorgaan.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/sreebhumipujorgaan.jpg', list:'durga'},
   {name:'Sunrise Dashabhuja', artist:'Monali Thakur, Jeet Ganguli', dur:'4:05', src:'sounds/sunriseDashabhuja.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/sunriseDashabhuja.jpg', list:'durga'},
   {name:'Uma Ashe Notun Saje', artist:'Ankita Bhattacharya', dur:'3:27', src:'sounds/umaaasheNotun.mp3', cat:'Traditional Songs', thumb:'sounds/thumbs/umaaasheNotun.jpg', list:'durga'},
 ];
